@@ -336,7 +336,7 @@ int main() {
                         Complex scalar;
                         cout << "\nEnter a scalar:\n";
                         enterComplex(&scalar);
-                        cout << scalar << " * v1 = " << *(v1->MulOnScalar(scalar)) << endl << endl;
+                        cout << "( " << scalar << " )" << " * v1 = " << *(v1->MulOnScalar(scalar)) << endl << endl;
                     }
                     break;
 
@@ -361,7 +361,7 @@ int main() {
                     }
                     break;
 
-                case 4: //Scalar product
+                case 4: //Norm calculation
                     if (*choice1 == 1) {    //Integrers
                         Vector<int>* v1 = makeVectorInt(choice5, "v1", dimention);
 
@@ -427,7 +427,7 @@ int main() {
                         Complex scalar;
                         cout << "\nEnter a scalar:\n";
                         enterComplex(&scalar);
-                        cout << scalar << " * f1 = " << *(f1->MulOnScalar(scalar)) << endl << endl;
+                        cout << "( " << scalar << " )" << " * f1 = " << *(f1->MulOnScalar(scalar)) << endl << endl;
                     }
                     break;
               case 3: //Calculation with argument

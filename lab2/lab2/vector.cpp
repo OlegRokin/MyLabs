@@ -120,12 +120,14 @@ double Vector<T>::Norm()
 
 template<class T>
 std::ostream& operator << (std::ostream &out, const Vector<T> &v) {
+    std::cout << "{ ";
     for (int i = 0; i < v.dimention; ++i) {
         out << (*v.coefficients)[i];
         if (i == v.dimention - 1)
             break;
         out << ", ";
     }
+    std::cout << " }";
     return out;
 }
 

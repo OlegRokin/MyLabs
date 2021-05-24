@@ -50,34 +50,6 @@ Complex Complex::operator * (const Complex& other) const {
     return Mul;
 }
 
-Complex Complex::operator ++ () const {
-    Complex Sum;
-    Sum.Re = this->Re + 1;
-    Sum.Im = this->Im;
-    return Sum;
-}
-
-Complex Complex::operator -- () const {
-    Complex Diff;
-    Diff.Re = this->Re - 1;
-    Diff.Im = this->Im;
-    return Diff;
-}
-
-Complex Complex::operator += (const Complex& other) const {
-    Complex Sum;
-    Sum.Re = this->Re + other.Re;
-    Sum.Im = this->Im + other.Im;
-    return Sum;
-}
-
-Complex Complex::operator -= (const Complex& other) const {
-    Complex Diff;
-    Diff.Re = this->Re - other.Re;
-    Diff.Im = this->Im - other.Im;
-    return Diff;
-}
-
 bool Complex::operator == (const Complex& other) const {
     return this->Re == other.Re && this->Im == other.Im;
 }
