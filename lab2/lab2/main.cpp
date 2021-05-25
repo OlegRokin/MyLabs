@@ -93,7 +93,7 @@ void enterDim(int* dimention) {
         enterNumber(dimention);
 
         if (*dimention > 0) {
-            cout << "Order = " << *dimention << endl << endl;
+            cout << "Dimention = " << *dimention << endl << endl;
             error = 0;
         }
         else {
@@ -147,7 +147,6 @@ Vector<double>* makeVectorDouble(int* choice5, string name, int* dimention){
     Vector<double>* v = new Vector<double> (*dimention);
     if (*choice5 == 1) {    //generation
         for (int i = 0; i < *dimention; ++i) {
-            //double a = (rand() % 20 - 10) / (rand() % 20 - 10);
             int b = (rand() % 101);
             double a = (rand()%3-1)*sqrt(b);
             v->Set(i, a);
